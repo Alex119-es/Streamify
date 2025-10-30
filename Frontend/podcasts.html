@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamify - Podcasts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                </svg>
+                <span>Streamify</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <span>Inicio</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    <span>Buscar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
+                    </svg>
+                    <span>Tu biblioteca</span>
+                </a>
+                <a href="podcasts.html" class="nav-item active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <span>Podcasts</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-section">
+                <h3>Playlist</h3>
+                <div class="playlist-list">
+                    <div class="playlist-item">Favoritos</div>
+                    <div class="playlist-item">Rock clásico</div>
+                    <div class="playlist-item">Pop 2024</div>
+                    <div class="playlist-item">Jazz chill</div>
+                    <div class="playlist-item">Electronic vibes</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Podcasts</h3>
+                <div class="playlist-list">
+                    <div class="playlist-item">Tecnología</div>
+                    <div class="playlist-item">Negocios</div>
+                    <div class="playlist-item">Comedia</div>
+                    <div class="playlist-item">Ciencia</div>
+                    <div class="playlist-item">Historia</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-bar">
+                <div class="top-bar-content">
+                    <div class="navigation-arrows">
+                        <button class="nav-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                        </button>
+                        <button class="nav-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="user-menu">
+                        <button class="user-button">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40&h=40&fit=crop&crop=face" alt="Usuario" class="user-avatar">
+                            <span>Usuario</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content">
+                <!-- Hero Section -->
+                <section class="hero-section">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Descubre Podcasts</h1>
+                        <p class="hero-subtitle">Escucha tus podcasts favoritos</p>
+                    </div>
+                </section>
+
+                <!-- Featured Podcasts -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>Podcasts Destacados</h2>
+                        <a href="#" class="see-all">Ver todo</a>
+                    </div>
+                    <div class="cards-grid">
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1478737270239-2f02f77fc618?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Tech Talks Daily</h3>
+                                <p class="card-artist">Tecnología • Episodios semanales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">156 episodios</span>
+                                    <span class="duration">45 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Business Minds</h3>
+                                <p class="card-artist">Negocios • Episodios quincenales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">89 episodios</span>
+                                    <span class="duration">60 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Comedy Central Pod</h3>
+                                <p class="card-artist">Comedia • Episodios diarios</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">342 episodios</span>
+                                    <span class="duration">30 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Science Explained</h3>
+                                <p class="card-artist">Ciencia • Episodios mensuales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">67 episodios</span>
+                                    <span class="duration">55 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1551029506-0807df4e2031?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">History Chronicles</h3>
+                                <p class="card-artist">Historia • Episodios semanales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">203 episodios</span>
+                                    <span class="duration">40 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recently Played Podcasts -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>Escuchados recientemente</h2>
+                        <a href="#" class="see-all">Ver todo</a>
+                    </div>
+                    <div class="cards-grid">
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1478737270239-2f02f77fc618?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Tech Talks Daily</h3>
+                                <p class="card-artist">Ep. 156: "El futuro de la IA"</p>
+                                <div class="podcast-progress">
+                                    <div class="progress-bar small">
+                                        <div class="progress-fill" style="width: 65%"></div>
+                                    </div>
+                                    <span class="progress-text">29:32 / 45:12</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Business Minds</h3>
+                                <p class="card-artist">Ep. 89: "Startups 2024"</p>
+                                <div class="podcast-progress">
+                                    <div class="progress-bar small">
+                                        <div class="progress-fill" style="width: 25%"></div>
+                                    </div>
+                                    <span class="progress-text">15:30 / 62:15</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Comedy Central Pod</h3>
+                                <p class="card-artist">Ep. 342: "Stand-up especial"</p>
+                                <div class="podcast-progress">
+                                    <div class="progress-bar small">
+                                        <div class="progress-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span class="progress-text">24:15 / 30:20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recommended Podcasts -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>Recomendados para ti</h2>
+                        <a href="#" class="see-all">Ver todo</a>
+                    </div>
+                    <div class="cards-grid">
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1540575464503-1780a89962f5?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Mind & Brain</h3>
+                                <p class="card-artist">Psicología • Episodios semanales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">124 episodios</span>
+                                    <span class="duration">35 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Creative Mornings</h3>
+                                <p class="card-artist">Diseño • Episodios mensuales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">78 episodios</span>
+                                    <span class="duration">50 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Entrepreneur Stories</h3>
+                                <p class="card-artist">Emprendimiento • Episodios quincenales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">156 episodios</span>
+                                    <span class="duration">65 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop" alt="Podcast cover">
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Health & Wellness</h3>
+                                <p class="card-artist">Salud • Episodios semanales</p>
+                                <div class="podcast-meta">
+                                    <span class="episodes">234 episodios</span>
+                                    <span class="duration">25 min avg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Categories -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>Categorías populares</h2>
+                    </div>
+                    <div class="categories-grid">
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                                </svg>
+                            </div>
+                            <h3>Tecnología</h3>
+                            <p>456 podcasts</p>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                                </svg>
+                            </div>
+                            <h3>Negocios</h3>
+                            <p>234 podcasts</p>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                                </svg>
+                            </div>
+                            <h3>Comedia</h3>
+                            <p>189 podcasts</p>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3>Ciencia</h3>
+                            <p>167 podcasts</p>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4-2.5z"/>
+                                </svg>
+                            </div>
+                            <h3>Historia</h3>
+                            <p>145 podcasts</p>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h3>Salud</h3>
+                            <p>134 podcasts</p>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 9l-1.41-1.42L10 14.17l-2.59-2.58L6 13l4 4zm1-6h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+                                </svg>
+                            </div>
+                            <h3>Educación</h3>
+                            <p>298 podcasts</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Player -->
+    <div class="player">
+        <div class="player-content">
+            <!-- Current Episode -->
+            <div class="now-playing">
+                <img src="https://images.unsplash.com/photo-1478737270239-2f02f77fc618?w=60&h=60&fit=crop" alt="Current episode" class="now-playing-img">
+                <div class="now-playing-info">
+                    <div class="song-name">Tech Talks Daily</div>
+                    <div class="artist-name">Ep. 156: "El futuro de la IA"</div>
+                </div>
+                <button class="like-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Player Controls -->
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="control-btn shuffle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>
+                        </svg>
+                    </button>
+                    <button class="control-btn prev">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                        </svg>
+                    </button>
+                    <button class="control-btn play-pause playing">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+                    <button class="control-btn next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                        </svg>
+                    </button>
+                    <button class="control-btn repeat">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="progress-container">
+                    <span class="time-current">29:32</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                        <div class="progress-handle"></div>
+                    </div>
+                    <span class="time-total">45:12</span>
+                </div>
+            </div>
+
+            <!-- Volume and Options -->
+            <div class="player-options">
+                <button class="control-btn queue">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15 6H3v2h12V6zm0 4H3v2h12v-2zM3 16h8v-2H3v2zM17 6v8.18c-.31-.11-.65-.18-1-.18-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3V8h3V6h-5z"/>
+                    </svg>
+                </button>
+                <button class="control-btn volume">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                </button>
+                <div class="volume-slider">
+                    <div class="volume-bar">
+                        <div class="volume-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="podcasts.js"></script>
+</body>
+</html>
